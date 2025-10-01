@@ -1,4 +1,4 @@
-%% Task # 2 - Helper function: indicator function generator 
+%% Task # 2 - Helper function: indicator function generator.
 
 % This function returns an indicator function along a vertical line at a
 % given x.
@@ -11,4 +11,5 @@ end % End of the function and return the fn.
 
 % Command Window Example:
 % 1) fn = indicator_fn_at_x(0.1)
+
 % 2) fn(0.1), ans = -1.
