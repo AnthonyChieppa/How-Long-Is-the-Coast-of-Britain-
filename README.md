@@ -1,5 +1,5 @@
 # How Long Is the Coast of Britain
-AMS 595 — MATLAB Project 2
+AMS 595 — MATLAB Project #2
 
 ## Project Description:
 This MATLAB project approximates the arc length of the Mandelbrot set boundary using four different tasks. In the tasks there is as follows: 
