@@ -1,4 +1,4 @@
-%% Task 1 - Mandelbrot Fractal it = fractal(c)
+% Task 1 - Mandelbrot Fractal it = fractal(c)
 
 % This function takes a complex c and returns the number of iterations till
 % divergence.
@@ -28,3 +28,4 @@ end % End of the function that returns how many iterations till divergence.
 % Command Window Example:
 % fractal(0+0i) <- In the Manderbrot Set
 % fractal(1+0i) <- Not in the Manderbrot Set
+
