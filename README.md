@@ -16,8 +16,10 @@ This MATLAB project approximates the arc length of the Mandelbrot set boundary u
     
 2. **Task 2:** function m = `bisection(fn_f, s, e)`
 - Used the bisection method with an indicator function to locate boundary points.
+  
 3. **Task 3:** Create a script that takes in a 15th-degree polynomial to the boundary.
-- 
+- Takes the fractal boundary points found in previous parts and fits a polynomial of order 15 to them.
+  
 4. **Task 4:**  function l = `poly_len(p, s, e)`
 - Takes a polynomial p, starting and ending points s and e
 - Return a curve length numerically via arc-length integration.
