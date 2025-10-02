@@ -18,7 +18,7 @@ function m = bisection(fn_f, s, e)
         if abs(e - s) < boundary_limit
             % If statement that, if true, it ends the while loop.
             m = (s + e) / 2; 
-            % Final midpoint of lower and upper bound that is returned
+            % Final midpoint of lower and upper bounds that is returned
             warning('Limit reached before final boundary point was found.'); % Notify issue
             break; % Exit loop due to issue
         end % End the check
@@ -30,7 +30,7 @@ function m = bisection(fn_f, s, e)
         end
 
         if fs * fm < 0
-            % If the midpoint is outside then...
+            % If the midpoint is outside, then...
             e = m; % Boundary point is in upper bound, push it down to m
             fe = fm; % Update fe to the new upper bound evaluation
         else
@@ -39,10 +39,10 @@ function m = bisection(fn_f, s, e)
             fs = fm; % Update fs to the new lower bound evaluation
         end
 
-    end % While loop ends once the upper and lower bounds 
+    end % While loop ends once the upper and lower bounds are met 
         % are no longer greater than the limit.
     m = (s + e) / 2; 
-    % Final midpoint of lower and upper bound that is returned
+    % Final midpoint of lower and upper bounds that is returned
 end % Return the function and give the midpoint of the lower and upper bound.
 
 % Command Window Example:
@@ -51,3 +51,4 @@ end % Return the function and give the midpoint of the lower and upper bound.
 % to confirm it is in the set.
 
 % 2) Then bisection(fn, 0, 1), ans = 0.6046.
+
