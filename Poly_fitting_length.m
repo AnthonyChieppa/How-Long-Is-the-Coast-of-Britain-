@@ -1,7 +1,7 @@
-%% Task # 3 - Find the boundary, find the polynomial approximating the boundary
+% Task # 3 - Find the boundary, find the polynomial approximating the boundary
 % Fit a polynomial of order 15 to your fractal boundary data points
 % The upper bound has to be chosen above the fractal. 
-% The lower bound has to be chosen within the fractal, y = 0 would do fine.
+% The lower bound has to be chosen within the fractal; y = 0 would do fine.
 % Find the fractal boundary for x ∈ [−2,1] for at least 10^3 (1000) points.
 
 % Can manually change the value '1000' to any number of points desired.
@@ -43,7 +43,7 @@ title('Polynomial Fit to Fractal Boundary');
 legend show; % Legend for the plot
 grid on;
 
-% Task 4 - usespoly_len function and script from task 3.
+% Task 4 - uses the poly_len function and script from task 3.
 s = min(x_fit); % Lower bound for the fitted range of x
 e = max(x_fit); % Upper bound for the fitted range of x
 l = poly_len(p, s, e); 
@@ -51,4 +51,5 @@ l = poly_len(p, s, e);
 % over bounds s and e.
 fprintf(['Range of x: [%.5f, %.5f] \n' ...
     'Approximate curve length of the polynomial = %.4f\n'], s, e, l);
+
 % Returns the curve length of the polynomial l.
