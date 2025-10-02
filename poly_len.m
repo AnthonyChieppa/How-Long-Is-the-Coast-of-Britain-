@@ -1,4 +1,4 @@
-%% Task # 4 - Boundary Length function l = poly_len(p, s, e) 
+% Task # 4 - Boundary Length function l = poly_len(p, s, e) 
 % This function takes the polynomial p, starting and ending points s, e and returns
 % the curve length of the polynomial l.
 
@@ -21,4 +21,5 @@ end % Ends function and returns the curve length of the polynomial.
 % 1) x = linspace(-2, 1, 1000)
 % 2) y = linspace(-1.5, 1.5, 1000)
 % 3) p = polyfit(x, y, 15)
+
 % 4) Then poly_len(p, -1, 1), ans = 2.8284.
