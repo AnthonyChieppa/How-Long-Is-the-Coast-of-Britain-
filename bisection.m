@@ -1,4 +1,4 @@
-%% Task 2 - function m = bisection(fn_f, s, e)
+% Task 2 - function m = bisection(fn_f, s, e)
 
 % This function takes a function fn_f, bounds s and e on the initial guess 
 % and returns a point where the point sign of f changes.
@@ -16,7 +16,7 @@ function m = bisection(fn_f, s, e)
         % This function continues to loop while the statement holds true.
         
         if abs(e - s) < boundary_limit
-            % If statment that if true it ends the while loop.
+            % If statement that, if true, it ends the while loop.
             m = (s + e) / 2; 
             % Final midpoint of lower and upper bound that is returned
             warning('Limit reached before final boundary point was found.'); % Notify issue
@@ -49,4 +49,5 @@ end % Return the function and give the midpoint of the lower and upper bound.
 % Using the previous indicator_in_at_x function 
 % 1) 'fn = indicator_fn_at_x(0.1)' and 'fn(0.1), ans = -1' 
 % to confirm it is in the set.
+
 % 2) Then bisection(fn, 0, 1), ans = 0.6046.
