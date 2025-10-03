@@ -2,11 +2,11 @@
 AMS 595 — MATLAB Project #2
 
 ## Project Description:
-This MATLAB project approximates the arc length of the Mandelbrot set boundary using four different tasks. In the tasks there is as follows: 
+This MATLAB project approximates the arc length of the Mandelbrot set boundary using four different tasks. In the tasks, there are the following: 
 
   - Write a function computing the fractal
   - Use the bisection algorithm to approximate the boundary of the fractal
-  - Use polynomial function approximation to find boundary as a function
+  - Use polynomial function approximation to find the boundary as a function
   - Integrate the boundary curve to find its length
 
 # Tasks Order:
@@ -30,25 +30,25 @@ This MATLAB project approximates the arc length of the Mandelbrot set boundary u
 - divergence_indicator.m - Function that determines if the point is inside the set or outside the set \
   (Inside = 1, Outside = -1).
 - indicator_fn_at_x - Helper function that returns the fn(y) which equates to divergence_indicator(x, y).
-- bisection.m - Function that ocates the point on the boundary of the fractal
+- bisection.m - Function that locates the point on the boundary of the fractal
 - poly_len.m - Function that provides the curve length of the polynomial.
-- Poly_fitting_length.m - Main script that finds the boundary, then finds and fits the polynomial of order 15. Afterwards it plots the original data points to the polynomial fit. \
-  Final code that uses the fitted minimum x and maximum x points as the bounds (s and e) to approximate curve length of the polynomial.
+- Poly_fitting_length.m - Main script that finds the boundary, then finds and fits the polynomial of order 15. Afterwards, it plots the original data points to the polynomial fit. \
+  Final code that uses the fitted minimum x and maximum x points as the bounds (s and e) to approximate the curve length of the polynomial.
 - Mandelbrot_plot.m - Script that uses imshow to visualize the fractal boundary for x ∈ [−2,1] for at least 10^3 (1000) points.
 
 ## Instructions:
-Download all `.m` files in the same folder, open MATLAB and then run the following:
+Download all `.m` files in the same folder, open MATLAB, and then run the following:
 
 ```matlab
 cd('C:/Users/YourUsername/Documents/Projects');
 % Opens file path where code is stored.
 Poly_fitting_length
-% Outputs the range of x, approximate curve length of the polynomial, and the plot.
+% Outputs the range of x, the approximate curve length of the polynomial, and the plot.
 ```
 
 ## Command Window Example Output:
 ```matlab
-% Values can be changed depending on what is desired.
+% Values can be adjusted as desired.
 fractal(0+0i) % 100 <- In the Manderbrot Set
 fractal(1+0i) % 2 <- Not in the Manderbrot Set
 
@@ -67,11 +67,11 @@ Mandelbrot_plot % imshow visualization for the Mandelbrot set
 bisection(fn, 0, 1) % ans = 0.6046.
 
 % Step 1: 
-x = linspace(-2, 1, 1000) % 1,000 evenly spaced out points between -2, and 1.
+x = linspace(-2, 1, 1000) % 1,000 evenly spaced out points between -2 and 1.
 % Step 2:
-y = linspace(-1.5, 1.5, 1000) % 1,000 evenly spaced out points between -1.5, and 1.5.
+y = linspace(-1.5, 1.5, 1000) % 1,000 evenly spaced out points between -1.5 and 1.5.
 % Step 3:
- p = polyfit(x, y, 15) % returns polynomial p of order 15 that is best fit for the data in y.
+ p = polyfit(x, y, 15) % returns polynomial p of order 15 that is the best fit for the data in y.
 % Step 4:
 poly_len(p, -1, 1) % ans = 2.8284.
 ```
